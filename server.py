@@ -31,5 +31,5 @@ def process_pcd():
     return send_file(output_path, as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=8080)
 
