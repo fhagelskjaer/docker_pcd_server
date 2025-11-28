@@ -22,7 +22,7 @@ def process_pcd():
     pcd = o3d.io.read_point_cloud(input_path)
 
     # Apply voxel downsampling (reduce density)
-    downsampled_pcd = pcd.voxel_down_sample(voxel_size=0.1)
+    downsampled_pcd = pcd.voxel_down_sample(voxel_size=0.2)
 
     # Save processed point cloud
     output_path = os.path.join(PROCESSED_FOLDER, f"processed_{file.filename}")
