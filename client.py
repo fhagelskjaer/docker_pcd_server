@@ -1,7 +1,8 @@
 
 import requests
 
-url = "http://localhost:5000/process_pcd"
+url = "http://localhost:8080/process_pcd"
+
 file_path = "example.pcd"
 
 with open(file_path, 'rb') as f:
